@@ -14,7 +14,7 @@ public class FibonacciProject {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter nth number: ");
         int n = in.nextInt();
-        System.out.println("Fibonacci number: " + fibonacciNumber(n));
+        System.out.println(n + "th Fibonacci number: " + fibonacciNumber(n));
     }
 }
 /* Console Output
