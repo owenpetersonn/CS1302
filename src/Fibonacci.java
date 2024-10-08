@@ -11,23 +11,23 @@ public class Fibonacci {
         System.out.print("Enter nth number: ");
         int n = in.nextInt();
 
-        long[] fibonnaciCache = new long[n+1];
+        long[] fibonacciCache = new long[n+1];
 
-        long fibN = fibonacciNum(n,fibonnaciCache);
+        long fibN = fibonacciNum(n,fibonacciCache);
         System.out.println("Fibonacci number: " + fibN);
     }
 
-    public static long fibonacciNum(int n, long[] fibonnaciCache) {
+    public static long fibonacciNum(int n, long[] fibonacciCache) {
         long nthFibNum = 0;
         if (n==1 || n==2) {
             return 1;
         }
-        if (fibonnaciCache[n]!=0) {
-            return fibonnaciCache[n];
+        if (fibonacciCache[n]!=0) {
+            return fibonacciCache[n];
         }
 
-        nthFibNum =  fibonacciNum(n-1, fibonnaciCache) + fibonacciNum(n-2, fibonnaciCache);
-        fibonnaciCache[n] = nthFibNum;
+        nthFibNum =  fibonacciNum(n-1, fibonacciCache) + fibonacciNum(n-2, fibonacciCache);
+        fibonacciCache[n] = nthFibNum;
 
         return nthFibNum;
     }
